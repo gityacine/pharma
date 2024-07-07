@@ -118,6 +118,7 @@ app.patch('/api/materials/:id', (req, res) => {
     });
 });
 
+
 app.delete('/api/materials/:id', (req, res) => {
     const { id } = req.params;
     const sql = "DELETE FROM material WHERE id = ?";
